@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="font-poppins overflow-y-auto overflow-x-hidden h-screen bg-gradient-to-b from-[#210035] to-[#5D0096]">
+        <nav class="flex items-center p-5">
+            <div class="flex items-center">
+                <div class="text-white text-2xl font-bold whitespace-nowrap">E-WALLET</div>
+                <span class="block text-2xl text-yellow-500 px-5 cursor-pointer">
+                    <i class="fa-solid fa-sun"></i>
+                </span>
+            </div>
+            <ul class="ml-auto sm:mr-20 md:mr-35 xl:mr-40">
+                <span class="text-2xl cursor-pointer text-white z-50 sm:hidden" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars" id="iconMenu"></i>
+                </span>
+                <div class="absolute right-5 bg-white bg-opacity-95 p-10 mt-2 text-center text-[20px] rounded-md w-1/2 hidden" id="menuDropDown">
+                    <li class="cursor-pointer mb-2 hover:text-purple-600 transition-colors duration-300">Features</li>
+                    <li class="cursor-pointer mb-2 hover:text-purple-600 transition-colors duration-300">Why E-Wallet</li>
+                    <li class="cursor-pointer mb-2 hover:text-purple-600 transition-colors duration-300">Pricing</li>
+                    <li class="cursor-pointer mb-2 hover:text-purple-600 transition-colors duration-300">Blog</li>
+                </div>
+                <div class="hidden text-white sm:flex md:text-xl gap-7" id="notMobile">
+                    <li class="cursor-pointer mb-2 hover:text-purple-600 transition-colors duration-300">Features</li>
+                    <li class="cursor-pointer mb-2 hover:text-purple-600 transition-colors duration-300">Why E-Wallet</li>
+                    <li class="cursor-pointer mb-2 hover:text-purple-600 transition-colors duration-300">Pricing</li>
+                    <li class="cursor-pointer mb-2 hover:text-purple-600 transition-colors duration-300">Blog</li>
+                </div>
+            </ul>
+        </nav>
+        <div>
+            <section class="text-3xl my-10 font-extrabold md:grid md:grid-cols-2 md:items-center">
+                <div class="text-center">
+                    <p class="text-white">Earn <span class="text-purple-300">More</span></p>
+                    <p class="text-purple-100">Pay less</p>
+                    <button class="text-white font-extrabold text-xl px-5 py-[8px] mt-4 bg-purple-500 rounded-[15px] hover:bg-pink-600 transition-all duration-300 shadow-md shadow-violet-500">
+                        Get started
+                    </button>
+                </div>
+                <div class="">
+                    <img src="./images/walletmobile.svg" alt="credit card" class="mx-auto md:max-w-md">
+                </div>
+            </section>
+        </div>
+        <div>
+            <div class="grid grid-cols-3 gap-x-3 max-w-4xl px-2 mx-auto mb-2">
+                <a href="#" class="bg-gradient-to-br from-white/95 to-transparent p-[10px] text-center rounded-[15px] shadow-3d">
+                    <img src="./images/icon-sale.png" alt="" class="mx-auto mb-1">
+                    <span class="text-white font-light text-sm">Promotion</span>
+                </a>
+                <a  href="#" class="bg-gradient-to-br from-white/95 to-transparent p-[10px] text-center rounded-[15px] shadow-3d">
+                    <img src="./images/icon-point.png" alt="" class="mx-auto mb-1">
+                    <span class="text-white font-light text-sm">Preferential Points</span>
+                </a>
+                <a  href="#" class="bg-gradient-to-br from-white/95 to-transparent p-[10px] text-center rounded-[15px] shadow-3d">
+                    <img src="./images/icon-location.png" alt="" class="mx-auto mb-1">
+                    <span class="text-white font-light text-sm">Transaction Location</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--scripts -->
+    <script src="./javascript/app.js"></script>
+    <!--scripts -->
+</body>
+</html>
